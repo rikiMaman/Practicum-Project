@@ -1,0 +1,61 @@
+<div *ngIf="modalService.isModalOpen | async" class="modal">
+    <app-employee-form [initialEmployeeData]="currentEmployee" [editingEmployeeId]="editingEmployeeId"
+      (closeModalEvent)="closeModal()"></app-employee-form>
+  </div>
+
+  <!-- <input type="text" (input)="filterEmployees($event)" placeholder="Search Employees" class="search-input"> -->
+  <div class="search-container">
+    <i class="fas fa-search"></i>
+    <input type="text" (input)="filterEmployees($event)" placeholder="Search Employees" class="search-input">
+  </div>
+
+  <div class="button-container">
+    <mat-form-field appearance="fill" dir="ltr">
+      <mat-label>Sort by</mat-label>
+      <mat-select (selectionChange)="onSortChange($event.value)">
+        <mat-option value="firstName">First Name</mat-option>
+        <mat-option value="lastName">Last Name</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <app-toolbar></app-toolbar>
+  </div>
+
+<mat-table id="customTable" [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+    <ng-container class="column-header" matColumnDef="firstName">
+      <mat-header-cell class="column-header-cell" *matHeaderCellDef mat-sort-header="firstName">First
+        Name</mat-header-cell>
+      <mat-cell *matCellDef="let employee"> {{employee.firstName}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="lastName" class="column-header">
+      <mat-header-cell *matHeaderCellDef mat-sort-header="lastName" class="column-header-cell">Last
+        Name</mat-header-cell>
+      <mat-cell *matCellDef="let employee"> {{employee.lastName}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="identity" class="column-header">
+      <mat-header-cell *matHeaderCellDef class="column-header-cell">ID</mat-header-cell>
+      <mat-cell *matCellDef="let employee"> {{employee.indetity}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="startWorkDate" class="column-header">
+      <mat-header-cell *matHeaderCellDef class="column-header-cell">Start Date</mat-header-cell>
+      <mat-cell *matCellDef="let employee"> {{employee.startDate | date: 'dd-MM-yyyy'}}
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="edit" class="column-header">
+      <mat-header-cell *matHeaderCellDef class="column-header-cell">Update</mat-header-cell>
+      <mat-cell *matCellDef="let employee">
+        <button mat-icon-button (click)="openModalForEdit(employee.id)">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="delete" class="column-header">
+      <mat-header-cell *matHeaderCellDef class="column-header-cell">Delete</mat-header-cell>
+      <mat-cell *matCellDef="let employee">
+        <button mat-icon-button (click)="deleteEmployee(employee.id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row class="my-custom-row" *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>

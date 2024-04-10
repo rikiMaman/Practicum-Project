@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-table .mat-row, .mat-table .mat-header-row {
+    border-bottom: 1px solid red; /* החלף את #COLOR בצבע הרצוי */
+  }
+  
+  .mat-table .mat-cell, .mat-table .mat-header-cell {
+    border-right: 1px solid red; /* החלף את #COLOR בצבע הרצוי */
+  }
+  

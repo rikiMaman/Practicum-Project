@@ -1,0 +1,15 @@
+<header>
+    <!-- <nav id="employee">Employees</nav> -->
+    <img src="../../assets/logo3.png" alt="logo" width="150px" height="150px" />
+    <nav><span id="employee">Employees</span></nav>
+    <!-- <nav (click)="navigateToConnect()">Connect Us</nav> -->
+    <!-- <nav>About Us</nav> -->
+  </header>
+  <div *ngIf="modalService.isModalOpen | async" class="modal">
+    <app-employee-form [initialEmployeeData]="currentEmployee" [editingEmployeeId]="editingEmployeeId"
+      (closeModalEvent)="closeModal()"></app-employee-form>
+  </div>
+  <div>
+    <app-employee-table></app-employee-table>
+  </div>
+  <div></div>

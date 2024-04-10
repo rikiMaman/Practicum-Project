@@ -1,0 +1,12 @@
+C:\רבקי -תכנות\Manage\Manage.Core\bin\Debug\net8.0\Manage.Core.deps.json
+C:\רבקי -תכנות\Manage\Manage.Core\bin\Debug\net8.0\Manage.Core.dll
+C:\רבקי -תכנות\Manage\Manage.Core\bin\Debug\net8.0\Manage.Core.pdb
+C:\רבקי -תכנות\Manage\Manage.Core\obj\Debug\net8.0\Manage.Core.csproj.AssemblyReference.cache
+C:\רבקי -תכנות\Manage\Manage.Core\obj\Debug\net8.0\Manage.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\רבקי -תכנות\Manage\Manage.Core\obj\Debug\net8.0\Manage.Core.AssemblyInfoInputs.cache
+C:\רבקי -תכנות\Manage\Manage.Core\obj\Debug\net8.0\Manage.Core.AssemblyInfo.cs
+C:\רבקי -תכנות\Manage\Manage.Core\obj\Debug\net8.0\Manage.Core.csproj.CoreCompileInputs.cache
+C:\רבקי -תכנות\Manage\Manage.Core\obj\Debug\net8.0\Manage.Core.dll
+C:\רבקי -תכנות\Manage\Manage.Core\obj\Debug\net8.0\refint\Manage.Core.dll
+C:\רבקי -תכנות\Manage\Manage.Core\obj\Debug\net8.0\Manage.Core.pdb
+C:\רבקי -תכנות\Manage\Manage.Core\obj\Debug\net8.0\ref\Manage.Core.dll

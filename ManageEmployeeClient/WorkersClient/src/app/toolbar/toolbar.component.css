@@ -1,0 +1,98 @@
+/* עיצוב לכל קונטיינר הכולל את כל האייקונים ושדה החיפוש */
+.title-container {
+    display: flex;
+    justify-content: flex-end; /* אייקונים מוצמדים לצד ימין */
+    align-items: center; /* מרכז אלמנטים אנכית */
+    padding: 10px; /* ריווח פנימי */
+    /* background: #f5f5f5; */
+}
+
+/* עיצוב לשדה החיפוש */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px rgb(143, 141, 141) solid; 
+    border-radius: 25px;
+    padding: 5px 10px;
+    max-width: 300px;
+    order: -1; /* מבטיח שהחיפוש יהיה הראשון */
+    margin-right: auto; /* דוחף את שאר האייקונים לימין */
+}
+
+.search-container .search-input {
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    flex-grow: 1;
+    padding: 5px;
+    background-color: transparent; /* רקע שקוף */
+    color: #333; /* צבע טקסט */
+}
+
+.search-container .search-input::placeholder {
+    font-style: italic;
+}
+
+.search-container i {
+    color: #ccc;
+}
+
+.search-container .search-input:focus {
+    border-color: #333;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* עיצוב לאייקונים ולכפתורים */
+.icon-container,
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    margin: 0 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: #dcdcdc;
+}
+
+/* עיצוב לכפתור ייצוא לאקסל */
+.excel-icon {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    padding: 5px;
+}
+
+/* עיצוב למודל */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.search-container .search-input:focus {
+    background-color:  #f5f5f5;/* או צבע רקע קיים אחר שאתה רוצה לשמור */
+    outline: none; /* ביטול המתאר שמופיע סביב האלמנט בפוקוס */
+    box-shadow: none; 
+    border-color: 2px rgb(0, 0, 0) solid; 
+
+
+
+}
+
+
+
+
+

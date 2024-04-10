@@ -1,0 +1,390 @@
+.modal {
+    direction: l;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  .close:hover {
+    color: red;
+  }
+  
+  .modal-content {
+    min-width: 700px;
+    width: auto;
+    margin-top: 20px;
+    max-height: 80%;
+    overflow-y: auto;
+    /* width: 80%; */
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-height: 90vh;
+    position: relative;
+   
+  }
+  
+  .modal-content label,
+  .modal-content input,
+  .modal-content select,
+  .modal-content button {
+    flex: 1;
+    margin: 5px 0;
+  }
+  
+  .modal-content div {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    direction: rtl;
+  }
+  
+  .card-body .form-group,
+  .card-body .form-check {
+    margin-bottom: 15px;
+    /* מוסיפים מרווח תחתון גדול יותר */
+  }
+  
+  .card-body .form-check-label,
+  .card-body .form-label {
+    margin-left: 0.5em;
+    /* מוסיפים מרווח בין התווית לבין האלמנט הפנימי */
+  }
+  
+  .card-body .form-check-input {
+    margin-left: auto;
+    /* ממרכז את הcheckbox ביחס לתווית שלו */
+  }
+  
+  
+  
+  .modal-content .form-group label,
+  .modal-content .form-check label {
+    display: inline-block;
+    margin-right: 10px;
+    /* מרווח בין התווית לאלמנט הבא */
+  }
+  
+  .modal-content .form-check {
+    display: flex;
+    /* align-items: center;  */
+  }
+  
+  .modal-content .form-group {
+    display: flex;
+    flex-direction: row;
+    /* שינוי כיוון שורה */
+    align-items: center;
+    margin-bottom: 10px;
+    /* מרווח למטה לכל קבוצת טופס */
+  }
+  
+  .modal-content .form-group label {
+    margin-right: 0.5rem;
+    /* מרווח בין התווית לשדה הקלט */
+    white-space: nowrap;
+    /* מונע שבירת שורה בתווית */
+  }
+  
+  .modal-content .form-group input,
+  .modal-content .form-group select {
+    flex-grow: 1;
+    /* שדה הקלט יתפשט למלא את המרחב הנותר */
+    margin-left: 0.5rem;
+    /* מרווח בין השדה לתווית */
+  }
+  
+  .modal-content .form-group.form-check {
+    display: flex;
+    flex-direction: row-reverse;
+    /* תווית תופיע לפני האלמנט בכיוון מימין לשמאל */
+    align-items: center;
+    /* מיישר את האלמנטים לאמצע */
+  }
+  
+  .modal-content .form-group.form-check .form-check-input {
+    margin-right: 0.5rem;
+    /* מרווח מימין לתיבת הסימון */
+    margin-left: 0;
+    /* ללא מרווח משמאל */
+  }
+  
+  .modal-content .form-group.form-check .form-check-label {
+    order: -1;
+    /* הזזת התווית לפני תיבת הסימון */
+  }
+  
+  input {
+    width: 300px;
+  }
+  
+  .close {
+    color: red;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    
+  }
+  
+  .button-container {
+    text-align: right;
+  }
+  
+  .form-group .form-control.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  
+  .error {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  
+  .my-custom-row {
+    background-color: white
+  }
+  
+  .my-custom-row:hover {
+    background-color: rgb(233, 75, 127);
+  }
+  
+  .mat-header-cell {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .column-header {
+    background-color: rgb(28, 29, 29);
+  }
+  
+  .column-header-cell {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(233, 75, 127);
+    border-color: black;
+  
+  }
+  
+  .modern-form {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  .modern-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+  }
+  
+  .modern-form .btn {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modern-form .error {
+    color: red;
+    font-size: 0.8em;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  
+  
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked+.slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  
+  }
+  
+  mat-slide-toggle {
+    /* margin: 8px 0; */
+    display: block;
+    margin: 2px 0;
+  }
+  
+  mat-card {
+    max-height: 90vh;
+    /* או כל גובה אחר שתרצה */
+    overflow-y: auto;
+    
+  }
+  
+  
+  
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+    /* והשאר של הסגנונות שלך... */
+  }
+  .modal-header {
+    position: sticky;
+    top: 0; /* יגרום לכותרת להידבק לצד העליון של המודל */
+    background: #fefefe; /* צבע רקע כדי למנוע ראות דרך */
+    z-index: 10; /* יותר גבוה מה.modal-body */
+  }
+  .modal-body {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000; /* יש לוודא שזה גבוה מכל האלמנטים אחרים במודל */
+  }
+  /* <div formArrayName="Roles">
+  <div *ngFor="let role of Roles.controls; let i = index" [formGroupName]="i">
+      <!-- שם תפקיד -->
+      <mat-form-field appearance="fill">
+          <mat-label>שם תפקיד</mat-label>
+          <mat-select formControlName="roleName">
+              <mat-option value="Manager">מנהל</mat-option>
+              <mat-option value="Teacher">מורה</mat-option>
+              <mat-option value="Supervisor">מפקח</mat-option>
+              <mat-option value="Secretary">מזכירה</mat-option>
+          </mat-select>
+      </mat-form-field>
+      
+  
+      <!-- האם תפקיד ניהול? -->
+      <mat-checkbox formControlName="isManagement">תפקיד ניהול?</mat-checkbox>
+  
+      <!-- תאריך כניסה לתפקיד -->
+      <mat-form-field appearance="fill">
+          <mat-label>תאריך כניסה לתפקיד</mat-label>
+          <input matInput [matDatepicker]="roleStartDatePicker" formControlName="roleStartDate">
+          <mat-datepicker-toggle matSuffix [for]="roleStartDatePicker"></mat-datepicker-toggle>
+          <mat-datepicker #roleStartDatePicker></mat-datepicker>
+      </mat-form-field>
+  
+      <!-- כפתור הסרת תפקיד -->
+      <button mat-raised-button color="warn" (click)="Roles.removeAt(i)">הסר תפקיד</button>
+  </div>
+  </div>
+  
+  <!-- כפתור הוספת תפקיד -->
+  <button mat-raised-button color="primary" (click)="addRole()">הוסף תפקיד</button> */
+  
+  /* סגנון כללי לשדות קלט בתוך המודל, יש להוסיף על פי הצורך */
+  #save-button {
+    font-size: 20px;  /* מגדיל את גודל הטקסט */
+    padding: 10px 20px;  /* מגדיל את הריווח בתוך הכפתור */
+    min-width: 150px;  /* מגדיר רוחב מינימלי לכפתור */
+  }
+  /* CSS */
+  .custom-input-width {
+    width: 500px; /* כאן ניתן להגדיר את הרוחב הרצוי לכל השדות */
+  }
+  
+  .mat-form-field {
+      width: 100%;
+      text-align: right;
+  }
+  
+  .mat-form-field label,
+  .mat-form-field .mat-input-element {
+      text-align: right;
+  }
+  .mat-dialog-container {
+    overflow: hidden; /* מונע גלילה ושטח ריק לא רצוי */
+    padding: 0; /* מסיר רווחים ברירת מחדל */
+  }
+  
+  /* ייתכן שתצטרך להתאים אישית ערכים אלה לפי הצורך */
+  .mat-dialog-content {
+    padding: 0; /* מסיר רווחים ברירת מחדל בתוך התוכן */
+  }
+  
+  /* ייתכן שתצטרך להתאים אישית ערכים אלה לפי הצורך */
+  .mat-dialog-actions {
+    margin: 0; /* מסיר רווחים ברירת מחדל בסוף הדיאלוג */
+    padding: 8px; /* או כל ערך אחר שתרצה */
+  }
+  
+  
+  

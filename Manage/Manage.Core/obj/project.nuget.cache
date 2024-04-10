@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "C9lfB8wdpN8hFtMSQmMvqMVgVJhPz3EDZxjtDHNPO70E/sq67906vI7nklG8P24k/Vl7clHNYabHxVrewDeQJA==",
+  "success": true,
+  "projectFilePath": "C:\\רבקי -תכנות\\Manage\\Manage.Core\\Manage.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\אסתר\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\אסתר\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\אסתר\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\אסתר\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\אסתר\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

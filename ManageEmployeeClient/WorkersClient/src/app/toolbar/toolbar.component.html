@@ -1,0 +1,22 @@
+<div class="title-container">
+    <button mat-icon-button (click)="printEmployee(employee)">
+        <mat-icon>print</mat-icon>
+    </button>
+    <button mat-icon-button (click)="openGoogleMaps()">
+        <span class="icon-container">
+            <mat-icon>place</mat-icon>
+        </span>
+    </button>
+    <button mat-icon-button (click)="openModalForAdd()">
+        <span class="icon-container">
+            <mat-icon>add</mat-icon>
+        </span>
+    </button>
+    <button mat-icon-button (click)="exportAsExcel()">
+        <img width="48" height="48" src="https://img.icons8.com/color/48/export-excel.png" alt="export-excel"
+            class="excel-icon" />
+    </button>
+</div>
+<div *ngIf="modalService.isModalOpen | async" class="modal">
+    <app-employee-form [initialEmployeeData]="currentEmployee" (closeModalEvent)="closeModal()"></app-employee-form>
+</div>

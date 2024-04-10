@@ -1,0 +1,17 @@
+C:\רבקי -תכנות\Manage\Manage.Data\bin\Debug\net8.0\Manage.Data.deps.json
+C:\רבקי -תכנות\Manage\Manage.Data\bin\Debug\net8.0\Manage.Data.runtimeconfig.json
+C:\רבקי -תכנות\Manage\Manage.Data\bin\Debug\net8.0\Manage.Data.dll
+C:\רבקי -תכנות\Manage\Manage.Data\bin\Debug\net8.0\Manage.Data.pdb
+C:\רבקי -תכנות\Manage\Manage.Data\bin\Debug\net8.0\Manage.Core.dll
+C:\רבקי -תכנות\Manage\Manage.Data\bin\Debug\net8.0\Manage.Core.pdb
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\Manage.Data.csproj.AssemblyReference.cache
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\Manage.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\Manage.Data.AssemblyInfoInputs.cache
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\Manage.Data.AssemblyInfo.cs
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\Manage.Data.csproj.CoreCompileInputs.cache
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\Manage.D.CDB01CA7.Up2Date
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\Manage.Data.dll
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\refint\Manage.Data.dll
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\Manage.Data.pdb
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\Manage.Data.genruntimeconfig.cache
+C:\רבקי -תכנות\Manage\Manage.Data\obj\Debug\net8.0\ref\Manage.Data.dll
